@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Window</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="firstLine" style="display: flex;">
+            <hr class="line1">
+            <h2>YAY! It’s BOGO</h2>
+            <hr class="line2">
+        </div>
+        <div class="offer-box">
+            <label>
+                <input type="radio" name="offer" onclick="toggleOptions(1)"> 
+                1 Unit <span class="discount">10% Off</span>
+                <div class="price-container">
+                    <span class="price" id="unitprice1">$11.00 USD</span>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </label>
+            
+            <div class="options" id="options-1">
+                <div style="display: flex; ">
+                    <p style="margin-left: 15px;">Size</p>
+                    <p style="margin-left: 117px;">Color</p>
+                  </div>
+                    <label>#1  <select><option>S</option><option>M</option><option>L</option></select></label>
+                    <label> <select><option>Black</option><option>Red</option></select></label>
+                    <br>
+                    <label>#2 <select><option>S</option><option>M</option><option>L</option></select></label>
+                    <label> <select><option>Black</option><option>Red</option></select></label>
+            </div>
+        </div>
+
+        <div class="offer-box most-popular">
+            <label>
+                <input type="radio" name="offer" onclick="toggleOptions(2)"> 
+                2 Unit <span class="discount">20% Off</span>
+                <div class="price-container">
+                    <span class="price" id="unitprice2">$15.00 USD</span>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+                
+            </label>
+            <div class="options" id="options-2">
+                <div style="display: flex; ">
+                    <p style="margin-left: 15px;">Size</p>
+                    <p style="margin-left: 117px;">Color</p>
+                  </div>
+                <label>#1 <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label> <select><option>Black</option><option>Red</option></select></label>
+                <br>
+                <label>#2  <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label> <select><option>Black</option><option>Red</option></select></label>
+            </div>
+        </div>
+
+        <div class="offer-box">
+            <label>
+                <input type="radio" name="offer" onclick="toggleOptions(3)"> 
+                3 Unit <span class="discount">30% Off</span>
+                <div class="price-container">
+                    <span class="price" id="unitprice3">$18.00 USD</span>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </label>
+            <div class="options" id="options-3">
+                <div style="display: flex; ">
+                    <p style="margin-left: 15x;">Size</p>
+                    <p style="margin-left: 117px;">Color</p>
+                  </div>
+                <label>#1 <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label><select><option>Black</option><option>Red</option></select></label>
+                <br>
+                <label>#2 <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label> <select><option>Black</option><option>Red</option></select></label>
+            </div>
+        </div>
+        <div style="display: flex;">
+        <p style="color: #FF6B82;"><strong>Free Delivery</strong></p>
+        <p class="total" style="margin-left: 220px;">Total:<span id="totalValue">$18.00 USD</span></p>
+        </div>
+        <button class="btn">+ Add to Cart</button>
+        <p style="color: #999;font-size: 11px;float: right;">@ Powered by Pumper</p>
+    
+    </div>
+ 
+</body>
+</html>

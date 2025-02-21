@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    /* text-align: center; */
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    /* width: 90%;
+    max-width: 400px;
+    margin: auto; */
+    width: 462px;               /* Window width */
+    height: auto;              /* Window height */
+    background-color: white;    /* Window background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px;              /* Inner space from the window edges */
+    position: relative;
+}
+h2{
+    margin-top: 10px;
+    font-size: 20px;
+    color:  #FF6B82;
+}
+.line1{
+    width: 125px;
+    height: 0;
+    margin-left: 6px;
+    margin-top: 20px;
+    background-color: black;
+}
+.line2{
+    width: 122px;
+    height: 0;
+    margin-right: 6px;
+    margin-top: 20px;
+    background-color: black;
+}
+.offer-box {
+    border: 2px solid #f8a5c2;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: right;
+    font-weight: bold;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+}
+.original-price {
+    float: right;
+    font-weight: bold;
+}
+.discount {
+    background: #ff6b81;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.most-popular {
+    position: relative;
+    border: 2px solid #ff6b81;
+}
+.most-popular::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6b81;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.options {
+    display: none;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+.options select {
+    width: 140px;
+    
+}
+
+
+.btn {
+    background: #ff6b81;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
